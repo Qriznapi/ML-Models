@@ -1,1 +1,2 @@
-
+Task is to predict Sales on time series using ML Models.
+There are two types of models used: LSTM and CNN. For each of them there are recommended hyperparameters and example of the results.
