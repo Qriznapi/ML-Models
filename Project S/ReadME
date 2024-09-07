@@ -7,5 +7,6 @@ CNN models were the most incosistent with different periods of time models. They
 LSTM models are the most interesting and succesfull. They manage to consistently predict sales with the max deviation of 7%. LSTM models perfomance depends less on the hyperparameters unlike CNN models and they are believed to save the trends better than other DL models. Yet there is likely some overfitting to the test.
 
 XG-boost has a great speed of training advantage over DL models as it trains 100 times faster (2-3 sec VS 4 min). Due to this fact it is much easier to optimize and find the best configuration for this algorithm. Unlike DL models XG-boost also shows good consistency on different data periods and seems safe from overfitting. This comes at the cost of the model perfomance as its deviation tends go up to 10 % for 2 out of 3 months predicted.
+For XG-boost  we added feature of USD-RUB exchange rate with the data from  https://stooq.com/q/d/?s=usdrub., so to predict the sales we will have to predict exchange rate and add it to the data file.
 
 Overall combination of LSTM and XG-boost is the most succesfull and consistent of the models available.
